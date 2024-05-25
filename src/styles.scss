@@ -1,1 +1,47 @@
-/* You can add global styles to this file, and also import other style files */
+body {
+  font-family: "Inter", sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  margin: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.avatar-wrapper {
+  display: flex;
+  gap: 32px;
+}
+
+.avatar {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  overflow: hidden;
+  border-radius: 50%;
+
+  picture {
+    display: block;
+
+    img {
+      vertical-align: bottom;
+      max-width: 100%;
+    }
+  }
+
+  &-name {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    background: #37996b;
+    color: white;
+
+    span {
+      font-size: 30px;
+      font-weight: bold;
+    }
+  }
+}
